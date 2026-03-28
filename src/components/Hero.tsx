@@ -1,7 +1,11 @@
 import { useScroll, useTransform, motion } from "framer-motion";
 import { useRef } from "react";
 
-export default function Hero() {
+interface HeroProps {
+  onOrderClick: () => void;
+}
+
+export default function Hero({ onOrderClick }: HeroProps) {
   const container = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: container,
@@ -29,9 +33,15 @@ export default function Hero() {
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-6">
           СДЕЛАНО<br/>С ДУШОЙ
         </h1>
-        <p className="text-lg md:text-xl max-w-2xl mx-auto px-6 opacity-90">
+        <p className="text-lg md:text-xl max-w-2xl mx-auto px-6 opacity-90 mb-10">
           Авторские изделия ручной работы — каждое уникально и создано с любовью
         </p>
+        <button
+          onClick={onOrderClick}
+          className="bg-white text-black px-8 py-3 uppercase text-sm tracking-wide font-medium hover:bg-neutral-200 transition-colors"
+        >
+          Оставить заявку
+        </button>
       </div>
     </div>
   );
