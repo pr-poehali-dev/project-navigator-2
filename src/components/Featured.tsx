@@ -7,16 +7,16 @@ export default function Featured({ onOrderClick }: FeaturedProps) {
     <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center min-h-screen px-6 py-12 lg:py-0 bg-white">
       <div className="flex-1 h-[400px] lg:h-[800px] mb-8 lg:mb-0 lg:order-2">
         <img
-          src="https://cdn.poehali.dev/projects/047a0852-2650-4319-84fa-bb5a47d147d7/files/371ae018-85bc-4a4d-9757-1831909af277.jpg"
-          alt="Мастер за работой"
+          src="https://cdn.poehali.dev/projects/047a0852-2650-4319-84fa-bb5a47d147d7/files/14979f57-75a6-4436-b14e-493337d2ff87.jpg"
+          alt="Вязаные шарфы ручной работы"
           className="w-full h-full object-cover"
         />
       </div>
       <div className="flex-1 text-left lg:h-[800px] flex flex-col justify-center lg:mr-12 lg:order-1">
-        <h3 className="uppercase mb-4 text-sm tracking-wide text-neutral-600">Ручная работа — это особенное</h3>
+        <h3 className="uppercase mb-4 text-sm tracking-wide text-neutral-600">Уютно и с любовью</h3>
         <p className="text-2xl lg:text-4xl mb-8 text-neutral-900 leading-tight">
-          Каждое изделие создаётся вручную — никакого серийного производства. Только натуральные материалы, авторский подход
-          и вложенное тепло мастера.
+          Мягкие авторские куклы и тёплые вязаные шарфы — каждое изделие создаётся вручную из натуральных материалов
+          и станет особенным подарком или украшением дома.
         </p>
         <button
           onClick={onOrderClick}
